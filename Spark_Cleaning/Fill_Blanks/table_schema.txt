@@ -1,0 +1,18 @@
+CREATE TABLE clean3 (
+    maker VARCHAR(255),
+    model VARCHAR(255),
+    mileage INTEGER,
+    manufacture_year INTEGER,
+    engine_displacement INTEGER,
+    engine_power INTEGER,
+    body_type VARCHAR(255),
+    color_slug VARCHAR(255),
+    stk_year VARCHAR(255),
+    transmission VARCHAR(255),
+    door_count VARCHAR(255),
+    seat_count VARCHAR(255),
+    fuel_type VARCHAR(255),
+    date_created TIMESTAMP,
+    date_last_seen TIMESTAMP,
+    price_eur DOUBLE PRECISION
+);
