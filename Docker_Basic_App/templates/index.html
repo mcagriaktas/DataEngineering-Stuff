@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <form action="/calculate" method="POST">
+        <label for="a">First value:</label>
+        <input type="number" name="a" id="a">
+        <br>
+        <label for="b">Second value:</label>
+        <input type="number" name="b" id="b">
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+
+    <h2>Calculation History:</h2>
+    <ul>
+        {% for calculation in history %}
+            <li>{{ calculation }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
